@@ -7,13 +7,12 @@ import Feed from "./pages/Feed";
 function App() {
   return (
     <>
-      {" "}
       <Switch>
-        <Route>
-          <Login exact path='/login' />
+        <Route exact path='/login'>
+          <Login />
         </Route>
-        <Route>
-          <Feed path='/feed' />
+        <Route exact path='/feed'>
+          <Feed />
         </Route>
       </Switch>
     </>
